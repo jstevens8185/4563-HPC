@@ -125,6 +125,7 @@ int main(int argc, char *argv[])
         pthread_join(threadHandles[thread], NULL);
     }
 
+    // Stop timer
     gettimeofday(&end, NULL);
     stopwatch = ((end.tv_sec*1000000 + end.tv_usec) - (start.tv_sec*1000000 + start.tv_usec));
 
